@@ -79,15 +79,15 @@ npm run dev
 
 The database is pre-seeded with the following credentials on the first run of the backend server:
 
-| Portal | Role | Username | Email | Password | URL |
+| Portal | Role | Username | Email | Password | Dev Server Port |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Student** | Candidate | `student` | `student@examhub.com` | `student123` | [http://localhost:5173/](http://localhost:5173/) |
-| **Examiner** | Administrator | `admin` | `admin@examhub.com` | `admin123` | [http://localhost:5174/](http://localhost:5174/) |
+| **Student** | Candidate | `student` | `student@examhub.com` | `student123` | Port 5173 (Default Dev Port) |
+| **Examiner** | Administrator | `admin` | `admin@examhub.com` | `admin123` | Port 5174 (Configured Dev Port) |
 
 ---
 
 ## 📈 Testing the Synchronization
-1. Log in as Examiner on [http://localhost:5174/](http://localhost:5174/). Go to **Create New Exam** and publish a test.
-2. Log in as Student on [http://localhost:5173/](http://localhost:5173/). Select the exam and click **Start**.
+1. Log in as Examiner on the Examiner panel (Port 5174). Go to **Create New Exam** and publish a test.
+2. Log in as Student on the Student panel (Port 5173). Select the exam and click **Start**.
 3. Trigger warnings by pressing `Esc` or changing tabs. Hear the alarm and see the red vignette.
 4. Complete the test, then return to the Examiner panel to inspect the scored attempt and its detailed proctoring violation logs.
